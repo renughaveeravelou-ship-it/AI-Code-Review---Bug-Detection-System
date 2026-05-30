@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+python-multipart
+transformers
+torch
+pandas
+pylint
+bandit
+radon
+openai
+scikit-learn
+

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Code Review & Bug Detection System</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+      window.addEventListener('error', function(e) {
+        var errBox = document.getElementById('debug-err-box');
+        if (!errBox) {
+          errBox = document.createElement('pre');
+          errBox.id = 'debug-err-box';
+          errBox.style = 'color: #ef4444; position: fixed; top: 10px; left: 10px; z-index: 999999; background: #080c14; padding: 15px; border: 1px solid #ef4444; border-radius: 8px; font-family: monospace; font-size: 12px; max-width: 90vw; overflow: auto; box-shadow: 0 4px 20px rgba(0,0,0,0.8);';
+          document.body.appendChild(errBox);
+        }
+        errBox.innerText += '\nError: ' + e.message + '\nSource: ' + e.filename + ':' + e.lineno + '\nStack: ' + (e.error ? e.error.stack : 'N/A') + '\n';
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+

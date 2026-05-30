@@ -1,0 +1,33 @@
+# Model weights
+model.safetensors
+*.safetensors
+*.bin
+*.pt
+*.onnx
+
+# Python Virtual Environment
+.venv/
+venv/
+ENV/
+
+# Python cache files
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Node.js dependencies (already ignored in frontend, but good for root)
+**/node_modules/
+
+# Local databases
+*.db
+backend/data/memory.db
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Build outputs
+/results/
+/dist/
+/build/
