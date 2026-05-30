@@ -61,41 +61,25 @@ If you are developing a production application, we recommend using TypeScript wi
 
 ### System Architecture
                 ┌─────────────────┐
-
                 │ Source Code File│
-
                 └────────┬────────┘
-
                          │
-
                          ▼
                 ┌─────────────────┐
-
                 │ File Upload API │
-
                 └────────┬────────┘
-
                          │
-
         ┌────────────────┼────────────────┐
-
         ▼                ▼                ▼
  ┌─────────────┐ ┌─────────────┐ ┌─────────────┐
  │ Static      │ │ Security    │ │ AI Bug      │
-
  │ Analysis    │ │ Analysis    │ │ Detection   │
-
  └─────────────┘ └─────────────┘ └─────────────┘
-
         │                │                │
-
         └────────────────┼────────────────┘
-
                          ▼
                 ┌─────────────────┐
-
-                │ Review Report   │
-                
+                │ Review Report   │     
                 └─────────────────┘
 
 ## Technologies Used
