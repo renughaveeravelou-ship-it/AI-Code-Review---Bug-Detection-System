@@ -79,14 +79,14 @@ If you are developing a production application, we recommend using TypeScript wi
         
         ▼                ▼                ▼
         
- ┌─────────────┐ ┌─────────────┐ ┌─────────────┐
+  ┌─────────────┐ ┌─────────────┐ ┌─────────────┐
  
- │ Static      │ │ Security    │ │ AI Bug      │
+  │ Static      │ │ Security    │ │ AI Bug      │
  
- │ Analysis    │ │ Analysis    │ │ Detection   │
+  │ Analysis    │ │ Analysis    │ │ Detection   │
 
  
- └─────────────┘ └─────────────┘ └─────────────┘
+  └─────────────┘ └─────────────┘ └─────────────┘
         │                │                │
         
         └────────────────┼────────────────┘
